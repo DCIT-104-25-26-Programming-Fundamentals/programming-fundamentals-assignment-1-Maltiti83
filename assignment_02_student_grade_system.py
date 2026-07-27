@@ -45,3 +45,32 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+def get_grade(score) :
+    # validate scora range
+    if score <0 or score >100:
+        return None
+
+    # Determine grade
+    if score >= 80:
+        return 'A'
+    elif score >= 70:
+        return 'B'
+    elif score >= 60:
+        return 'C'
+    elif score >= 50:
+        return 'D'
+    else:
+        return 'F'
+def main():
+    score = float(input("Enter score(0-100):"))
+
+    result = get_grade(score)
+
+    if result is None:
+        print("Error: score must be between 0-100.")
+    else:
+        print(f"Grade: {result}")
+
+
+main()
+    
