@@ -47,13 +47,13 @@ def is_prime(number):
     # if no divisors were found, the number is prime
     return True
 
-    #Main program
-    num = int(input("Enter a number: "))
 
-    if is_prime(num):
-        print(f"{num} is a prime number:")
-    else:
-        print (f"{num} is a prime number.")
+#Main program
+num = int(input("Enter a number: "))
 
+if is_prime(num):
+    print(f"{num} is a prime number.")
+else:
+    print(f"{num} is not a prime number.")
 
 
